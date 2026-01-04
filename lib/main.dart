@@ -1,14 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio/port_folio.dart';
+import 'view/portfolio/ui/my_portfolio.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -17,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const PortfolioHome(),
+      home: PortfolioHome(),
     );
   }
 }
